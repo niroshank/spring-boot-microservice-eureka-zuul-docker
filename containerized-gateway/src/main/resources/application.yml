@@ -5,9 +5,8 @@ spring:
   application:
     name: containerized-gateway
 
-
 zuul:
-#  prefix: /api/v1
+  #  prefix: /api/v1
   routes:
     containerized-main:
       path: /backoffice/**
@@ -29,4 +28,4 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
     serviceUrl:
-      defaultZone: http://discovery:8761/eureka/
+      defaultZone: http://${discovery.host:localhost}:8761/eureka/
