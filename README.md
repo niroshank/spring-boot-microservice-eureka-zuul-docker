@@ -1,3 +1,42 @@
+# Setup
+--------------
+
+## Install JDK
+verify the java
+`java -version`
+
+## Install Maven
+verify the maven
+`mvn -version`
+
+## Clone the following repo.
+https://github.com/lasitha-petthawadu/spring-boot-microservice-eureka-zuul-docker
+
+## Install the maven packages
+`mvn install -Dskiptests`
+
+## Run in interactive mode
+Show all the logs of each of the services
+`docker-compose up --build`
+
+## Runs in detached mode
+Will return to the command prompt(after this command you can still use the cmd)
+`docker-compose up -d`
+
+## Review logs
+`docker logs`
+`docker logs Service Name`
+
+## List all the images that got created
+`docker images`
+
+
+## References
+https://docs.docker.com/compose/gettingstarted/
+
+---------------------------------------------------------------------------------
+
+
 # SPRING BOOT MICROCSERVICE USING SPRING CLOUD, EUREKA, RIBBON, ZUUL
 
 This project is created to get experience on **Microservices With Netflix OSS**. This is a simple project by coded imperative programming with simple business requirements.
